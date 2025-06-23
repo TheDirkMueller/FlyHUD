@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "FlyHUD",
     platforms: [
-        .iOS(.v12),
+        .iOS(.v13),
         .tvOS(.v12),
         .visionOS(.v1)
     ],

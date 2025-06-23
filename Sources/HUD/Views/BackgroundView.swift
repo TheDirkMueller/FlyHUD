@@ -17,15 +17,15 @@ extension BackgroundView {
         case solidColor
         /// UIVisualEffectView background view. `Defaults to .light`.
         case blur(UIBlurEffect.Style = {
-            if #available(iOS 13.0, visionOS 1.0, *) {
-                #if os(tvOS)
-                return .regular
-                #else
-                return .systemThickMaterial
-                #endif
-            } else {
+            // if #available(iOS 13.0, visionOS 1.0, *) {
+            //     #if os(tvOS)
+            //     return .regular
+            //     #else
+            //     return .systemThickMaterial
+            //     #endif
+            // } else {
                 return .light
-            }
+            // }
         }())
     }
 }
